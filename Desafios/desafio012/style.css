@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+header {
+
+}
+
+header > p {
+
+}
+
+main {
+
+}
+
+main > p {
+    text-align: left;
+}

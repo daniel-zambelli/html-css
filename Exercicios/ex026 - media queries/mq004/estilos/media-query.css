@@ -13,8 +13,27 @@ Grandes Telas: acima de 1200px
 
 /* IMPRESSÃO */
 @media print {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+
   body {
-    background-image: url(../imagens/back-print.jpg);
+    background-image: url(../imagens/back-print.jpg); /*Desnecessário porque não se imprime background em impressoras*/
+  }
+
+  main {
+    width: 90vw;
+    border: 2px solid black;
+  }
+
+  main::after {
+    content: "Esta impressão foi feita através do site danielzambelli.github.io";
+    text-decoration: overline;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
   }
 
   #phone {

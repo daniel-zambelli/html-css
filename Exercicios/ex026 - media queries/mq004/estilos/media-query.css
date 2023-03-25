@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop:992px até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+/* IMPRESSÃO */
+@media print {
+  body {
+    background-image: url(../imagens/back-print.jpg);
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: block;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+/* Deveria fazer estas configurações para serem aplicadas a dispositivos móveis, porém serão ignorada pois o site já está feito em seu arquivo style.css para dispositivos móveis, o que será feito em media queries será para telas maiores
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+}
+*/
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: block;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+/* GRANDES TELAS */
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  main {
+    width: 700px;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: block;
+  }
+}

@@ -20,8 +20,23 @@ header > h1 {
   text-align: center;
 }
 
-menu {
+.material-symbols-outlined {
+  background-color: rgb(48, 48, 48);
+  color: white;
   display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.material-symbols-outlined:hover {
+  background-color: white;
+  color: black;
+}
+
+menu {
+  display: none;
 }
 
 menu > ul {

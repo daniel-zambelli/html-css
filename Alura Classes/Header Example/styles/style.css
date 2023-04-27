@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #696969;
+}
+
+.top__site {
+  width: 100vw;
+  height: 10%;
+  background-color: black;
+}
